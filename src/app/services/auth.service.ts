@@ -8,7 +8,7 @@ import { User, LoginData, RegisterData, AuthResponse } from '../models/user.mode
   providedIn: 'root'
 })
 export class AuthService {
-  private apiUrl = 'http://localhost:3000/api/auth';
+  private apiUrl = 'https://updatefinance-be.onrender.com/api/auth';
   private currentUserSubject = new BehaviorSubject<User | null>(null);
   public currentUser$ = this.currentUserSubject.asObservable();
 
