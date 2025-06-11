@@ -7,7 +7,7 @@ import { Loan, CreateLoanData, PaymentData, UpdateLoanData } from '../models/loa
   providedIn: 'root'
 })
 export class LoanService {
-  private apiUrl = 'http://localhost:3000/api/loans';
+  private apiUrl = 'https://updatefinance-be.onrender.com/api/loans';
 
   constructor(private http: HttpClient) {}
 
